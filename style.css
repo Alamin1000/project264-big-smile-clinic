@@ -352,6 +352,10 @@ p:last-child{
   position: absolute;
   top: 50%;
   transform: translate(0,-50%);
+  transition: 0.3s;
+}
+.input-x:focus ~ .input-x-icon {
+  opacity: 0;
 }
 .input-x {
   padding: 26px 30px;
