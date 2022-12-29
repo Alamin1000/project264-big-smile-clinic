@@ -59,7 +59,7 @@
 						<a href="index.html" class="header-logo">
 							<img src="images/logo.svg" alt="">
 						</a>
-						<div class="dropdown language d-md-block d-none">
+						<div class="dropdown language">
 							<a href="#" data-bs-toggle="dropdown">
 								<div class="icon"><img src="images/lan-arrow.svg" alt=""></div>
 								<div class="txt">ENGLISH</div>
@@ -72,7 +72,7 @@
 							</div>
 						</div>
 						
-						<a href="#" class="offcanvas-open d-md-none">
+						<a href="#" class="offcanvas-open d-none">
 							<img src="images/habmurger-menu.svg" alt="">
 						</a>
 					</div>
@@ -82,6 +82,14 @@
 
 		<!-- main -->
 		<main>
+
+			<!-- float-button -->
+			<a href="#hero-form" class="f-chat-btn float-chat-button">
+				<img src="images/hex-chat.svg" alt="">
+				<span class="txt">Chat With Us</span>
+			</a>
+			<!-- float-button-end -->
+
 			<!-- hero-section -->
 			<section class="hero-section">
 				<div class="container">
@@ -106,7 +114,7 @@
 							</div>
 						</div>
 
-						<div class="hero__form">
+						<div class="hero__form" id="hero-form">
 							<div class="hero__form__title cont-blk cont-blk--center">
 								<h4 class="h4">Biu Smile clinic</h4>
 								<h2 class="h2 mb-0">Get Free Consultancy</h2>
@@ -211,111 +219,240 @@
 							<h2 class="h2">We Got You Covered </h2>
 						</div>
 
-						<div class="packages__wrapper row">
-							<!-- package-column -->
-							<div class="package__column col-lg-4">
-								<div class="package__card">
-									<div class="package__card__top">
-										<h3>ALL-On-6 Full Mouth</h3>
-										<ul>
-											<li> Initial Consultation</li>
-											<li>Panoramic X-Rays</li>
-											<li>12 All-On-6 Implants</li>
-											<li>Full Set Of Zirconium Crowns 
-												(Ivoclar Vivadent) 24</li>
-											<li>Tooth Extraction (If needed)</li>
-											<li>full set of temporary dentures</li>
-											<li>All Necessary Medicines</li>
-											<li>local anesthesia</li>
-											<li>Accommodation (8 Nights)</li>
-											<li>Vip Airport Transfer</li>
-											<li>Language Support</li>
-											<li>Swiss-German Dental 
-												Material</li>
-										</ul>
-									</div>
-									<div class="package__card__bottom">
-										<p class="h-s"><a href="#">Full Mouth 7990€</a></p>
-									</div>
-								</div>
-								<div class="package__column__bt-more">
-									<a href="#" class="package__column__bt-more__btn">
-										<div class="icon"><img src="images/hex-call-icon.svg" alt=""></div>
-										<div class="txt">More Information</div>
-									</a>
-								</div>
+						<div class="packages__type-nav_row">
+							<div class="packages__type-nav">
+								<ul class="nav">
+									<li><a class="active" href="#" data-bs-toggle="tab" data-bs-target="#packages-1">Standard</a></li>
+									<li><a href="#" data-bs-toggle="tab" data-bs-target="#packages-2">Premium</a></li>
+								</ul>
 							</div>
-							<!-- package-column-end -->
-							<!-- package-column -->
-							<div class="package__column col-lg-4">
-								<div class="package__card">
-									<div class="package__card__top">
-										<h3>Veneers Packages</h3>
-										<ul>
-											<li> Initial Consultation</li>
-											<li>Panoramic X-Rays</li>
-											<li>Tooth Filling (if needed)</li>
-											<li>Professional Teeth Cleaning</li>
-											<li>Temporary Veneers</li>
-											<li>Emax Empress Veneers</li>
-											<li>All Necessary Medicines</li>
-											<li>Accommodation (6 Nights)</li>
-											<li>Vip Airport Transfer</li>
-											<li>Language Support</li>
-											<li>Swiss-German Dental 
-												Materials</li>
-										</ul>
-									</div>
-									<div class="package__card__bottom">
-										<p class="h-s"><a href="#">12 VENEERS PACK €2800</a></p>
-										<p class="h-s"><a href="#">16 VENEERS PACK €3200</a></p>
-										<p class="h-s"><a href="#"></a>20 VENEERS PACK €3900</p>
-									</div>
-								</div>
-								<div class="package__column__bt-more">
-									<a href="#" class="package__column__bt-more__btn">
-										<div class="icon"><img src="images/hex-call-icon.svg" alt=""></div>
-										<div class="txt">More Information</div>
-									</a>
-								</div>
-							</div>
-							<!-- package-column-end -->
-							<!-- package-column -->
-							<div class="package__column col-lg-4">
-								<div class="package__card">
-									<div class="package__card__top">
-										<h3>Crown package</h3>
-										<ul>
-											<li> Initial Consultation</li>
-											<li>Panoramic X-Rays</li>
-											<li>Tooth Filling (if needed)</li>
-											<li>Professional Teeth Cleaning</li>
-											<li>Temporary Crowns</li>
-											<li>Permanent Zirconia Crowns " 
-												ivoclar vivadent"</li>
-											<li>All Necessary Medicines</li>
-											<li>Accommodation (6 Nights)</li>
-											<li>Vip Airport Transfer</li>
-											<li>Language Support</li>
-											<li>Swiss-German Dental 
-												Materials</li>
-										</ul>
-									</div>
-									<div class="package__card__bottom">
-										<p class="h-s"><a href="#">12 VENEERS PACK €2800</a></p>
-										<p class="h-s"><a href="#">16 VENEERS PACK €3200</a></p>
-										<p class="h-s"><a href="#"></a>20 VENEERS PACK €3900</p>
-									</div>
-								</div>
-								<div class="package__column__bt-more">
-									<a href="#" class="package__column__bt-more__btn">
-										<div class="icon"><img src="images/hex-call-icon.svg" alt=""></div>
-										<div class="txt">More Information</div>
-									</a>
-								</div>
-							</div>
-							<!-- package-column-end -->
 						</div>
+
+						<div class="packages__tab-content tab-content">
+
+							<!-- packages__tab-pan -->
+							<div class="packages__tab-pan tab-pane fade show active" id="packages-1">
+								<div class="packages__wrapper row">
+									<!-- package-column -->
+									<div class="package__column col-lg-4">
+										<div class="package__card">
+											<div class="package__card__top">
+												<h3>ALL-On-6 Full Mouth</h3>
+												<ul>
+													<li> Initial Consultation</li>
+													<li>Panoramic X-Rays</li>
+													<li>12 All-On-6 Implants</li>
+													<li>Full Set Of Zirconium Crowns 
+														(Ivoclar Vivadent) 24</li>
+													<li>Tooth Extraction (If needed)</li>
+													<li>full set of temporary dentures</li>
+													<li>All Necessary Medicines</li>
+													<li>local anesthesia</li>
+													<li>Accommodation (8 Nights)</li>
+													<li>Vip Airport Transfer</li>
+													<li>Language Support</li>
+													<li>Swiss-German Dental 
+														Material</li>
+												</ul>
+											</div>
+											<div class="package__card__bottom">
+												<p class="h-s"><a href="#">Full Mouth 7990€</a></p>
+											</div>
+										</div>
+										<div class="package__column__bt-more">
+											<a href="#" class="package__column__bt-more__btn">
+												<div class="icon"><img src="images/hex-call-icon.svg" alt=""></div>
+												<div class="txt">More Information</div>
+											</a>
+										</div>
+									</div>
+									<!-- package-column-end -->
+									<!-- package-column -->
+									<div class="package__column col-lg-4">
+										<div class="package__card">
+											<div class="package__card__top">
+												<h3>Veneers Packages</h3>
+												<ul>
+													<li> Initial Consultation</li>
+													<li>Panoramic X-Rays</li>
+													<li>Tooth Filling (if needed)</li>
+													<li>Professional Teeth Cleaning</li>
+													<li>Temporary Veneers</li>
+													<li>Emax Empress Veneers</li>
+													<li>All Necessary Medicines</li>
+													<li>Accommodation (6 Nights)</li>
+													<li>Vip Airport Transfer</li>
+													<li>Language Support</li>
+													<li>Swiss-German Dental 
+														Materials</li>
+												</ul>
+											</div>
+											<div class="package__card__bottom">
+												<p class="h-s"><a href="#">12 VENEERS PACK €2800</a></p>
+												<p class="h-s"><a href="#">16 VENEERS PACK €3200</a></p>
+												<p class="h-s"><a href="#"></a>20 VENEERS PACK €3900</p>
+											</div>
+										</div>
+										<div class="package__column__bt-more">
+											<a href="#" class="package__column__bt-more__btn">
+												<div class="icon"><img src="images/hex-call-icon.svg" alt=""></div>
+												<div class="txt">More Information</div>
+											</a>
+										</div>
+									</div>
+									<!-- package-column-end -->
+									<!-- package-column -->
+									<div class="package__column col-lg-4">
+										<div class="package__card">
+											<div class="package__card__top">
+												<h3>Crown package</h3>
+												<ul>
+													<li> Initial Consultation</li>
+													<li>Panoramic X-Rays</li>
+													<li>Tooth Filling (if needed)</li>
+													<li>Professional Teeth Cleaning</li>
+													<li>Temporary Crowns</li>
+													<li>Permanent Zirconia Crowns " 
+														ivoclar vivadent"</li>
+													<li>All Necessary Medicines</li>
+													<li>Accommodation (6 Nights)</li>
+													<li>Vip Airport Transfer</li>
+													<li>Language Support</li>
+													<li>Swiss-German Dental 
+														Materials</li>
+												</ul>
+											</div>
+											<div class="package__card__bottom">
+												<p class="h-s"><a href="#">12 VENEERS PACK €2800</a></p>
+												<p class="h-s"><a href="#">16 VENEERS PACK €3200</a></p>
+												<p class="h-s"><a href="#"></a>20 VENEERS PACK €3900</p>
+											</div>
+										</div>
+										<div class="package__column__bt-more">
+											<a href="#" class="package__column__bt-more__btn">
+												<div class="icon"><img src="images/hex-call-icon.svg" alt=""></div>
+												<div class="txt">More Information</div>
+											</a>
+										</div>
+									</div>
+									<!-- package-column-end -->
+								</div>
+							</div>
+							<!-- packages__tab-pan-end -->
+
+							<!-- packages__tab-pan -->
+							<div class="packages__tab-pan tab-pane fade" id="packages-2">
+								<div class="packages__wrapper row">
+									<!-- package-column -->
+									<div class="package__column col-lg-4">
+										<div class="package__card">
+											<div class="package__card__top">
+												<h3>ALL-On-12 Full Mouth</h3>
+												<ul>
+													<li> Initial Consultation</li>
+													<li>Panoramic X-Rays</li>
+													<li>12 All-On-6 Implants</li>
+													<li>Full Set Of Zirconium Crowns 
+														(Ivoclar Vivadent) 24</li>
+													<li>Tooth Extraction (If needed)</li>
+													<li>full set of temporary dentures</li>
+													<li>All Necessary Medicines</li>
+													<li>local anesthesia</li>
+													<li>Accommodation (8 Nights)</li>
+													<li>Vip Airport Transfer</li>
+													<li>Language Support</li>
+													<li>Swiss-German Dental 
+														Material</li>
+												</ul>
+											</div>
+											<div class="package__card__bottom">
+												<p class="h-s"><a href="#">Full Mouth 9999€</a></p>
+											</div>
+										</div>
+										<div class="package__column__bt-more">
+											<a href="#" class="package__column__bt-more__btn">
+												<div class="icon"><img src="images/hex-call-icon.svg" alt=""></div>
+												<div class="txt">More Information</div>
+											</a>
+										</div>
+									</div>
+									<!-- package-column-end -->
+									<!-- package-column -->
+									<div class="package__column col-lg-4">
+										<div class="package__card">
+											<div class="package__card__top">
+												<h3>Veneers Packages</h3>
+												<ul>
+													<li> Initial Consultation</li>
+													<li>Panoramic X-Rays</li>
+													<li>Tooth Filling (if needed)</li>
+													<li>Professional Teeth Cleaning</li>
+													<li>Temporary Veneers</li>
+													<li>Emax Empress Veneers</li>
+													<li>All Necessary Medicines</li>
+													<li>Accommodation (6 Nights)</li>
+													<li>Vip Airport Transfer</li>
+													<li>Language Support</li>
+													<li>Swiss-German Dental 
+														Materials</li>
+												</ul>
+											</div>
+											<div class="package__card__bottom">
+												<p class="h-s"><a href="#">12 VENEERS PACK €2800</a></p>
+												<p class="h-s"><a href="#">16 VENEERS PACK €3200</a></p>
+												<p class="h-s"><a href="#"></a>20 VENEERS PACK €3900</p>
+											</div>
+										</div>
+										<div class="package__column__bt-more">
+											<a href="#" class="package__column__bt-more__btn">
+												<div class="icon"><img src="images/hex-call-icon.svg" alt=""></div>
+												<div class="txt">More Information</div>
+											</a>
+										</div>
+									</div>
+									<!-- package-column-end -->
+									<!-- package-column -->
+									<div class="package__column col-lg-4">
+										<div class="package__card">
+											<div class="package__card__top">
+												<h3>Crown package</h3>
+												<ul>
+													<li> Initial Consultation</li>
+													<li>Panoramic X-Rays</li>
+													<li>Tooth Filling (if needed)</li>
+													<li>Professional Teeth Cleaning</li>
+													<li>Temporary Crowns</li>
+													<li>Permanent Zirconia Crowns " 
+														ivoclar vivadent"</li>
+													<li>All Necessary Medicines</li>
+													<li>Accommodation (6 Nights)</li>
+													<li>Vip Airport Transfer</li>
+													<li>Language Support</li>
+													<li>Swiss-German Dental 
+														Materials</li>
+												</ul>
+											</div>
+											<div class="package__card__bottom">
+												<p class="h-s"><a href="#">12 VENEERS PACK €2800</a></p>
+												<p class="h-s"><a href="#">16 VENEERS PACK €3200</a></p>
+												<p class="h-s"><a href="#"></a>20 VENEERS PACK €3900</p>
+											</div>
+										</div>
+										<div class="package__column__bt-more">
+											<a href="#" class="package__column__bt-more__btn">
+												<div class="icon"><img src="images/hex-call-icon.svg" alt=""></div>
+												<div class="txt">More Information</div>
+											</a>
+										</div>
+									</div>
+									<!-- package-column-end -->
+								</div>
+							</div>
+							<!-- packages__tab-pan-end -->
+
+						</div>
+
+						
 
 					</div>
 				</div>

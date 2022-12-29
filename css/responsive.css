@@ -319,6 +319,23 @@
     .slider-arrow-1 .owl-nav button {
         width: 30px;
     }
+
+    .packages__type-nav ul li a {
+        padding: 7px 13px;
+        min-width: 90px;
+        font-size: 13px;
+    }
+    .packages__type-nav {
+        padding: 3px;
+    }
+    .sec-title {
+        margin: 0 0 22px;
+    }
+    .packages__type-nav_row {
+        margin: 0 0 40px;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 
@@ -636,6 +653,12 @@
 
     .hero-section {
         background: url('../images/mobile-hero-background.png') no-repeat center center/cover;
+    }
+
+
+    .float-chat-button {
+        bottom: 15px;
+        left: 15px;
     }
 }
 
