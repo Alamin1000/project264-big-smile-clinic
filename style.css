@@ -1021,8 +1021,9 @@ p:last-child{
   align-items: stretch;
 }
 .float-button img {
-  z-index: 2;
-  position: relative;
+	z-index: 2;
+	position: relative;
+	width: 60px !important;
 }
 .float-button .txt {
   color: var(--theme__color2);

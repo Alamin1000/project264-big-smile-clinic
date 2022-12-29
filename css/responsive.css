@@ -336,6 +336,10 @@
         display: flex;
         justify-content: center;
     }
+
+    .float-button img {
+        width: 35px !important;
+    }
 }
 
 
@@ -663,7 +667,7 @@
     }
     .float-button .txt {
         padding-left: 7px;
-      }
+    }
 }
 
 
