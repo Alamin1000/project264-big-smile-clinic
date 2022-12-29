@@ -656,10 +656,14 @@
     }
 
 
-    .float-chat-button {
+    .float-buttons {
         bottom: 15px;
         left: 15px;
+        width: 120px;
     }
+    .float-button .txt {
+        padding-left: 7px;
+      }
 }
 
 

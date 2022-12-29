@@ -1003,11 +1003,43 @@ p:last-child{
 }
 
 
-.float-chat-button {
+.float-buttons {
 	position: fixed;
 	bottom: 20px;
 	left: 20px;
 	z-index: 100;
+  direction: ltr;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  overflow: hidden;
+  width: 220px;
+}
+.float-button {
+  position: relative;
+  align-items: stretch;
+}
+.float-button img {
+  z-index: 2;
+  position: relative;
+}
+.float-button .txt {
+  color: var(--theme__color2);
+  transform: translate(calc(-100% - 20px),-50%);
+  transition: 0.3s;
+  position: absolute;
+  top: 50%;
+  left: calc(100%);
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding-left: 15px;
+}
+.float-button:hover .txt {
+  transform: translate(0px,-50%);
 }
 #hero-form {
   scroll-margin: 30px;
