@@ -26,21 +26,25 @@
 		<!-- offcanvas-start -->
 		<div class="offcanvas-menu">
 			<ul class="offmenu" id="menuParent">
-				<a href="#" class="offcanvas-close"><i class="fa fa-times"></i></a>
-				<li class="active"><a href="#">HOME</a></li>
-				<li><a href="#">ABOUT US</a></li>
-				<li class="dropdown">
-					<a href="#" data-bs-toggle="collapse" data-bs-target='#drop-menu1'>OUR HORSES</a>
-					<div class="dropdown-menu-custom collapse" id="drop-menu1" data-bs-parent="#menuParent">
-						<ul>
-							<li><a href="#">YEARLINGS</a></li>
-							<li><a href="#">2 YEAR OLDS</a></li>
-							<li><a href="#">3 YEAR OLD PLUS</a></li>
-						</ul>
+				<a href="#" class="offcanvas-close"><i class="fal fa-times"></i></a>
+				<li>
+					<div class="dropdown language d-flex">
+						<a href="#" data-bs-toggle="dropdown" class="d-flex">
+							<div class="icon"><img src="images/lan-arrow.svg" alt=""></div>
+							<div class="txt">ENGLISH</div>
+						</a>
+						<div class="dropdown-menu">
+							<ul>
+								<li><a href="#">ENGLISH</a></li>
+								<li><a href="#">BANGLA</a></li>
+							</ul>
+						</div>
 					</div>
 				</li>
-				<li><a href="#">LATEST NEWS</a></li>
-				<li><a href="#">CONTACT & FIND US</a></li>
+				<li class="active"><a href="#">HOME</a></li>
+				<li><a class="offcanvas-close-a" href="#">ABOUT US</a></li>
+				<li><a class="offcanvas-close-a" href="#">LATEST NEWS</a></li>
+				<li><a class="offcanvas-close-a" href="#">CONTACT US</a></li>
 			</ul>
 		</div>
 		<div class="offcanvas-overlay"></div>
@@ -48,22 +52,28 @@
 
 		<!-- header-section -->
 		<header class="header-section">
-			<div class="container">
-				<div class="header-section__inner">
-					<a href="index.html" class="header-logo">
-						<img src="" alt="">
-					</a>
-					<div class="dropdown">
-						<a href="#" data-bs-toggle="dropdown">
-							<div class="icon"><img src="images/lan-arrow.svg" alt=""></div>
-							<div class="txt">ENGLISH</div>
+			<div class="header_in">
+				<div class="container">
+					<div class="header-section__inner">
+						<a href="index.html" class="header-logo">
+							<img src="images/logo.svg" alt="">
 						</a>
-						<div class="dropdown-menu">
-							<ul>
-								<li>ENGLISH</li>
-								<li>BANGLA</li>
-							</ul>
+						<div class="dropdown language d-md-block d-none">
+							<a href="#" data-bs-toggle="dropdown">
+								<div class="icon"><img src="images/lan-arrow.svg" alt=""></div>
+								<div class="txt">ENGLISH</div>
+							</a>
+							<div class="dropdown-menu">
+								<ul>
+									<li><a href="#">ENGLISH</a></li>
+									<li><a href="#">BANGLA</a></li>
+								</ul>
+							</div>
 						</div>
+						
+						<a href="#" class="offcanvas-open d-md-none">
+							<img src="images/habmurger-menu.svg" alt="">
+						</a>
 					</div>
 				</div>
 			</div>
@@ -79,6 +89,7 @@
 							<div class="hero__start__top">
 								<h4>WELCOME TO Biu Smile clinic</h4>
 								<h1 class="hi1">Because Your Smile Is
+									<br>
 									Our Passion</h1>
 							</div>
 							<div class="hero__start__bottom">
@@ -89,17 +100,17 @@
 								<h2>
 									For Dental Implants
 									<br>
-									Start From <span class="big"><span class="color-theme1">299</span>€</span>
+									Start From <span class="big fw-700"><span class="color-theme1">299</span>€</span>
 								</h2>
 							</div>
 						</div>
 
 						<div class="hero__form">
-							<div class="hero__form__title">
+							<div class="hero__form__title cont-blk cont-blk--center">
 								<h4 class="h4">Biu Smile clinic</h4>
-								<h2 class="h2">Get Free Consultancy</h2>
+								<h2 class="h2 mb-0">Get Free Consultancy</h2>
 							</div>
-							<div class="hero__form__main row">
+							<div class="hero__form__main row g-xl-4 g-lg-3 g-2">
 								<div class="col-12">
 									<div class="single-input-x">
 										<div class="input-x-outer">
@@ -122,13 +133,13 @@
 								<div class="col-6">
 									<div class="single-input-x">
 										<div class="input-x-outer">
-											<div class="input-x-icon"><img src="images/user.svg" alt=""></div>
+											<div class="input-x-icon"><img src="images/telephone.svg" alt=""></div>
 											<input type="text" class="input-x" placeholder="Mobile No">
 										</div>
 									</div>
 								</div>
 								<div class="col-12">
-									<div class="d-flex justify-content-center">
+									<div class="d-flex justify-content-center pt-xl-3 pt-2">
 										<button class="x-submit-button">
 											<img src="images/send-arrow-icon.svg" alt="">
 											<span class="txt">Send</span>
@@ -145,16 +156,16 @@
 
 			<!-- provider-section -->
 			<section class="provider-section">
-				<img src="images/provider-ring-shape.svg" alt="" class="provider-section__1">
+				<img src="images/provider-ring-shape.svg" alt="" class="provider-section__shape-1">
 				<div class="container">
 					<div class="provider-section__inner">
 
 						<div class="provider-section__title sec-title cont-blk cont-blk--center">
 							<h4 class="h4">Biu Smile clinic</h4>
-							<h2 class="h2">Our Providers</h2>
+							<h2 class="h2 mb-0">Our Providers</h2>
 						</div>
 
-						<div class="provider-slider provider-slider-active owl-carousel">
+						<div class="provider-slider provider-slider-active owl-carousel slider-arrow-1 slider-arrow-center">
 							<div class="provider-slide">
 								<img src="images/provider-1.png" alt="" class="img">
 							</div>
@@ -199,12 +210,12 @@
 							<h2 class="h2">We Got You Covered </h2>
 						</div>
 
-						<div class="packages__wrapper">
+						<div class="packages__wrapper row">
 							<!-- package-column -->
-							<div class="package__column">
+							<div class="package__column col-lg-4">
 								<div class="package__card">
 									<div class="package__card__top">
-										<h3></h3>
+										<h3>ALL-On-6 Full Mouth</h3>
 										<ul>
 											<li> Initial Consultation</li>
 											<li>Panoramic X-Rays</li>
@@ -235,10 +246,10 @@
 							</div>
 							<!-- package-column-end -->
 							<!-- package-column -->
-							<div class="package__column">
+							<div class="package__column col-lg-4">
 								<div class="package__card">
 									<div class="package__card__top">
-										<h3></h3>
+										<h3>Veneers Packages</h3>
 										<ul>
 											<li> Initial Consultation</li>
 											<li>Panoramic X-Rays</li>
@@ -269,10 +280,10 @@
 							</div>
 							<!-- package-column-end -->
 							<!-- package-column -->
-							<div class="package__column">
+							<div class="package__column col-lg-4">
 								<div class="package__card">
 									<div class="package__card__top">
-										<h3></h3>
+										<h3>Crown package</h3>
 										<ul>
 											<li> Initial Consultation</li>
 											<li>Panoramic X-Rays</li>
@@ -312,20 +323,20 @@
 
 
 			<!-- rate-section -->
-			<section class="rate-section">
+			<section class="rate-section pb-0">
 				<div class="container">
 					<div class="rate-section__inner">
 
 						<div class="rate-section__main-row">
 							<div class="rate-section__main__left">
-								<div class="cont-blk cont-blk--center rate-section__main__left__title">
+								<div class="cont-blk rate-section__main__left__title">
 									<h4 class="h4">Biu Smile clinic</h4>
 									<h2 class="h2">Rate As Good As</h2>
 								</div>
 								<div class="rate-section__main__left__rting">
 									<div class="ms-strs">
 										<div class="ms-pnt">
-											5.0
+											
 										</div>
 										<ul class="strs">
 											<li><img src="images/star.svg" alt=""></li>
@@ -389,8 +400,8 @@
 							<div class="safe-section__main__content">
 								<div class="cont-blk">
 									<div class="cont-blk__title">
-										<h4>Biu Smile clinic</h4>
-										<h2>You will be in safe hands! </h2>
+										<h4 class="h4">Biu Smile clinic</h4>
+										<h2 class="h2 mb-0">You will be in safe hands! </h2>
 									</div>
 									<div class="cont-blk__body">
 										<div class="cont-in-safe">
@@ -399,7 +410,7 @@
 												the doctors. We offer the latest technology using high-quality treatment materials of 
 												German and Swiss origin, which are the most efficient in the world</p>
 										</div>
-										<div class="cont-in-safe">
+										<div class="cont-in-safe mb-0">
 											<h4>Post treatment </h4>
 											<p>We will continue to provide you with any support you need after treatment. We provide a 
 												guarantee on all our treatments, your medical advisor will stay following up with you. </p>
@@ -424,11 +435,11 @@
 
 						<div class="tr-section__title sec-title cont-blk cont-blk--center">
 							<h4 class="h4">Biu Smile clinic</h4>
-							<h2 class="h2">Testimonials And Results Section</h2>
+							<h2 class="h2 mb-0">Testimonials And Results Section</h2>
 						</div>
 
 
-						<div class="testimonial-slider testimonial-slider-active owl-carousel slider-arrow-1">
+						<div class="testimonial-slider testimonial-slider-active owl-carousel slider-arrow-1 slider-arrow-center">
 							<div class="testimonial-slide">
 								<div class="caption">
 									<h5>Before</h5>
@@ -500,7 +511,7 @@
 							<!-- result-card -->
 							<div class="result__card">
 								<div class="result__card__media">
-									<img src="images/result-image.png" alt="">
+									<img src="images/result-image.png" alt="" class="media-thumb">
 									<a href="https://www.youtube.com/watch?v=tcPOuAd6Y84" class="vid-button popup-video">
 										<img src="images/pause.svg" alt="">
 									</a>
@@ -517,7 +528,29 @@
 							<!-- result-card -->
 							<div class="result__card result-card--ex">
 								<div class="result__card__thumb">
-									<img src="images" alt="" class="img">
+									<img src="images/result-thumb-img.png" alt="" class="img">
+								</div>
+								<div class="result__card__title">
+									<div class="start">
+										<h4>Aohande Sponds</h4>
+										<p>Repeat Client</p>
+									</div>
+									<img src="images/Quotemarks-right.svg" alt="" class="end-quote">
+								</div>
+								<div class="result-card__body">
+									<p>Suspendisse a pellentesque dui, non 
+										felis. Maecenas malesuada elit lectus 
+										felis, malesuada ultricies malesuada.
+										</p>
+									<p>Vestibulum et ligula. Ut molestie a, 
+										ultricies porta urna pellentesque felis</p>
+								</div>
+							</div>
+							<!-- result-card-end -->
+							<!-- result-card -->
+							<div class="result__card result-card--ex">
+								<div class="result__card__thumb">
+									<img src="images/result-thumb-img.png" alt="" class="img">
 								</div>
 								<div class="result__card__title">
 									<div class="start">
@@ -547,15 +580,16 @@
 
 			<!-- trip-section -->
 			<section class="trip-section">
+				<img src="images/trip-secction__shape.svg" alt="" class="trip-section__shape-1">
 				<div class="container">
 					<div class="trip-section__inner">
 						
 						<div class="tr-section__title sec-title cont-blk cont-blk--center">
 							<h4 class="h4">Biu Smile clinic</h4>
-							<h2 class="h2">Treatment Trip</h2>
+							<h2 class="h2 mb-0">Treatment Trip</h2>
 						</div>
 
-						<div class="trip-slider trip-slider-active owl-carousel slider-arrow-1">
+						<div class="trip-slider">
 							<div class="trip-slide">
 								<div class="caption">
 									<h5>Get Your free consultancy</h5>
@@ -599,23 +633,6 @@
 									<img src="images/trip-card-5.png" alt="">
 								</div>
 							</div>
-							<div class="trip-slide">
-								<div class="caption">
-									<h5>Get Your free consultancy</h5>
-								</div>
-								<div class="image">
-									<img src="images/trip-card-1.png" alt="">
-								</div>
-							</div>
-							<div class="trip-slide">
-								<div class="caption">
-									<h5>Pick up from the airport to 
-										Hotel</h5>
-								</div>
-								<div class="image">
-									<img src="images/trip-card-2.png" alt="">
-								</div>
-							</div>
 						</div>
 
 					</div>
@@ -630,10 +647,10 @@
 			<div class="container">
 				<div class="footer-section__inner">
 					<div class="footer__top">
-						<a href="#" class="footer__logo">
+						<a href="index.html" class="footer__logo">
 							<img src="images/footer-logo.svg" alt="">
 						</a>
-						<h4>Ömer Avni, İnönü Cd. No:36, 34437 Beyoğlu/İstanbul Turkey</h4>
+						<h4 class="mb-0">Ömer Avni, İnönü Cd. No:36, 34437 Beyoğlu/İstanbul Turkey</h4>
 					</div>
 					<div class="footer__bottom">
 						<p class="copy-right">2022 &copy; All rights reserved by BIU SMILE CLINIC.</p>
