@@ -248,6 +248,14 @@
   /* --preloader-end-- */
 
 
+/* rtl-owl */
+.owl-carousel {
+    direction: ltr;
+}
+.owl-item {
+    direction: rtl;
+}
+
 
 /* important */
 #scrollUp {

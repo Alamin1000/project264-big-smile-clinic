@@ -25,6 +25,9 @@ body {
   -webkit-font-smoothing: antialiased;
   font-family: var(--roboto);
 }
+.rtl-page {
+  direction: rtl;
+}
 a, a:active, a:focus, a:active, a:hover {
   text-decoration:none !important;
   color: inherit;
@@ -139,10 +142,10 @@ p:last-child{
   color: var(--theme__color2);
   display: flex;
   align-items: center;
+  gap: 15px;
 }
 .language > a .icon {
   width: 50px;
-  margin: 0 15px 0 0;
 }
 .language .dropdown-menu {
   
@@ -178,6 +181,10 @@ p:last-child{
   line-height: 1;
   font-size: 22px;
 }
+.rtl-page .offcanvas-close {
+  right: unset;
+  left: 15px;
+}
 .offcanvas-close:hover {
   color: var(--theme__color1);
 }
@@ -190,6 +197,11 @@ p:last-child{
   z-index: 1000;
   transform: translateX(-105%);
   transition: 0.3s;
+  display: flex;
+}
+.rtl-page .offcanvas-menu {
+  /* justify-content: flex-end; */
+  transform: translateX(105%);
 }
 .offcanvas-menu.active {
   transform: translate(0);
@@ -311,10 +323,10 @@ p:last-child{
   font-weight: 500;
   display: flex;
   align-items: center;
+  gap: 22px;
 }
 .hero__start__bottom h3 img {
   width: 64px;
-  margin: 0 22px 0 0;
 }
 .hero__start__bottom h2 {
   font-size: 40px;
@@ -348,11 +360,16 @@ p:last-child{
   position: relative;
 }
 .input-x-icon {
-  right: 30px;
+  --start-offset: 30px;
+  right: var(--start-offset);
   position: absolute;
   top: 50%;
   transform: translate(0,-50%);
   transition: 0.3s;
+}
+.rtl-page .input-x-icon {
+  left: var(--start-offset);
+  right: auto;
 }
 .input-x:focus ~ .input-x-icon {
   opacity: 0;
@@ -381,6 +398,7 @@ p:last-child{
 }
 .x-submit-button {
   font-size: 21px;
+  gap: 28px;
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -395,7 +413,6 @@ p:last-child{
 }
 .x-submit-button img {
   width: 61px;
-  margin: 0 28px 0 0;
 }
 /* ========== hero-section-end ========== */
 
@@ -505,9 +522,14 @@ p:last-child{
   flex-direction: column;
 } 
 .package__card__top ul li {
+  --offset-start: 14px;
   font-size: 20px;
-  padding-left: 14px;
+  padding-left: var(--offset-start);
   position: relative;
+}
+.rtl-page .package__card__top ul li {
+  padding-left: 0;
+  padding-right: var(--offset-start);
 }
 .package__card__top ul li::before {
   content: '';
@@ -520,6 +542,10 @@ p:last-child{
   top: 50%;
   left: 0;
   transform: translate(0,-50%);
+}
+.rtl-page .package__card__top ul li::before {
+  left: 0;
+  right: 0;
 }
 .package__card__bottom {
   padding: 15px 46px;
@@ -549,6 +575,7 @@ p:last-child{
   display: flex;
   align-items: center;
   transition: 0.3s;
+  gap: 25px;
 }
 .package__column__bt-more__btn:hover {
   color: var(--theme__color2);
@@ -556,7 +583,6 @@ p:last-child{
 }
 .package__column__bt-more__btn .icon {
   width: 51px;
-  margin: 0 25px 0 0;
 }
 /* ========== package-section-end ========== */
 
@@ -571,9 +597,9 @@ p:last-child{
 
 .rate-section__main-row {
   display: flex;
+  gap: 62px;
 }
 .rate-section__main__left {
-  margin:  0 62px 0 0;
   flex-shrink: 0;
 }
 .rate-section__main__left__title {
@@ -586,9 +612,9 @@ p:last-child{
   display: flex;
   align-items: center;
   margin: 0 0 13px;
+  gap: 20px;
 }
 .rate-section__main__left__rting .ms-strs .ms-pnt {
-  margin-right: 20px;
   width: 71px;
   height: 72px;
   background: url(images/chat-border.png) no-repeat center center/contain;
@@ -633,6 +659,10 @@ p:last-child{
 	background: inherit;
 	z-index: -1;
 }
+.rtl-page .rate-section__main__right::after {
+  left: unset;
+  right: 0;
+}
 .rate-section__main__right .shape_1 {
 	width: 255px;
 	position: absolute;
@@ -649,7 +679,11 @@ p:last-child{
   width: 97px;
   position: absolute;
   top: 30px;
-  right: -10px;
+  right: 0px;
+}
+.rtl-page .rate-section__main__right .shape_3 {
+  right: unset;
+  left: 0;
 }
 .rate-section__features_wrap {
   display: flex;
@@ -702,11 +736,11 @@ p:last-child{
 .safe-section__main {
   display: flex;
   align-items: center;
+  gap: 7%;
 }
 .safe-section__start-img {
 	width: 46.7%;
 	flex-shrink: 0;
-	margin-right: 7%;
 }
 .safe-section__start-img img {
 
@@ -760,7 +794,7 @@ p:last-child{
   background: #fff;
 }
 .testimonial-slide .caption {
-  padding: 13px 0 16px;
+  padding: 13px 15px 16px;
 }
 .testimonial-slide .caption h5 {
   font-size: 20px;
@@ -903,7 +937,7 @@ p:last-child{
 	width: 169px;
 }
 .footer__logo img {
-	margin: -39px 0 -38px -20px;
+	margin: -39px 0 -38px 0px;
 }
 .footer__top h4 {
   font-size: 25px;
@@ -925,13 +959,13 @@ p:last-child{
 }
 .f-chat-btn {
   font-size: 24px;
+  gap: 17px;
   font-weight: 700;
   display: flex;
   align-items: center;
 }
 .f-chat-btn img {
   width: 50px;
-  margin: 0 17px 0 0;
 }
 /* ========== footer-section-end ========== */
 
